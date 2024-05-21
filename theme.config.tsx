@@ -35,7 +35,7 @@ const config: DocsThemeConfig = {
       title: title && asPath !== "/" ? `${title} | Docs` : siteConfig.meta.title,
       description: description || siteConfig.meta.description,
       openGraph: {
-        images: [{ url: siteConfig.LOGO }],
+        images: [{ url: image || siteConfig.meta.img }],
       },
     };
   },
