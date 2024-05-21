@@ -7,3 +7,7 @@ pages/*
 .DS_Store
 
 docs/Tamplate/*
+
+robots.txt
+sitemap.xml
+sitemap-0.xml

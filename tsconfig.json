@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scripts/copy.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scripts/copy.js", "next-sitemap.config.js"],
   "exclude": ["node_modules"]
 }
