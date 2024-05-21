@@ -27,8 +27,6 @@ const config: DocsThemeConfig = {
     const config = useConfig();
     const { asPath } = useRouter();
 
-    console.log(config.frontMatter);
-
     const { title, description, image, tag } = config.frontMatter;
 
     return {
