@@ -2,24 +2,30 @@
 const fs = require("fs");
 const path = require("path");
 
-function copyFiles(srcDir, destDir) {
-  if (fs.existsSync(destDir)) {
-    fs.rmdirSync(destDir, { recursive: true });
+function copyFiles(options) {
+  const { input, output, exclude = [] } = options;
+
+  if (fs.existsSync(output)) {
+    fs.rmSync(output, { recursive: true, force: true });
   }
 
-  fs.mkdirSync(destDir);
+  fs.mkdirSync(output);
 
-  fs.readdirSync(srcDir).forEach((file) => {
-    const srcFile = path.join(srcDir, file);
-    const destFile = path.join(destDir, file);
+  fs.readdirSync(input).forEach((file) => {
+    if (exclude.includes(file)) {
+      return;
+    }
+
+    const srcFile = path.join(input, file);
+    const destFile = path.join(output, file);
 
     if (fs.lstatSync(srcFile).isDirectory()) {
       fs.mkdirSync(destFile, { recursive: true });
-      copyFiles(srcFile, destFile);
+      copyFiles({ input: srcFile, output: destFile, exclude });
     } else {
       fs.copyFileSync(srcFile, destFile);
     }
   });
 }
 
-copyFiles("./docs", "./pages");
+copyFiles({ input: "./docs", output: "./pages", exclude: [".obsidian", "Tamplate"] });
