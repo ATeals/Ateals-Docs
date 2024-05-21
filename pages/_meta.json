@@ -1,0 +1,12 @@
+{
+  "index": "Main",
+  "Blog": {
+    "title": "Blog ↗",
+    "type": "page",
+    "href": "https://ateals.vercel.app",
+    "newWindow": true
+  },
+  "---": {
+    "type": "separator"
+  }
+}
