@@ -4,8 +4,9 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "npm run post && next build",
+    "start": "next start",
+    "post": "node ./scripts/copy.js"
   },
   "repository": {
     "type": "git",
