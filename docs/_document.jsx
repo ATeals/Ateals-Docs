@@ -6,6 +6,11 @@ export default function render() {
       <Head>
         <title>Ateals - docs</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          name="google-site-verification"
+          content="SWzdnKcr1a_u4qCWr_61fw6PxQf4NZkXWHl1aDrwaeg"
+        />
       </Head>
       <body>
         <Main />
