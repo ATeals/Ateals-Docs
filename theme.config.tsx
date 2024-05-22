@@ -17,6 +17,9 @@ const config: DocsThemeConfig = {
     next: true,
     prev: true,
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
   editLink: {
     text: "",
   },
