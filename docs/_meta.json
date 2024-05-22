@@ -1,9 +1,5 @@
 {
   "index": "Main",
-  "--- 아카이브": {
-    "type": "separator",
-    "title": "아카이브"
-  },
   "--- 개발": {
     "type": "separator",
     "title": "개발"
@@ -14,5 +10,10 @@
     "type": "page",
     "href": "https://ateals.vercel.app",
     "newWindow": true
-  }
+  },
+  "--- 아카이브": {
+    "type": "separator",
+    "title": "아카이브"
+  },
+  "book": "독서"
 }
