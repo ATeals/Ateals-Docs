@@ -1,46 +1,46 @@
 // copy.js
-const fs = require("fs");
-const path = require("path");
-const crypto = require("crypto");
+import { existsSync, rmSync, mkdirSync, readdirSync, lstatSync, copyFileSync } from "fs";
+import { join, extname, parse, format } from "path";
+import { createHash } from "crypto";
 
 function copyFiles(options) {
   const { input, output, exclude = [] } = options;
 
-  if (fs.existsSync(output)) {
-    fs.rmSync(output, { recursive: true, force: true });
+  if (existsSync(output)) {
+    rmSync(output, { recursive: true, force: true });
   }
 
-  fs.mkdirSync(output);
+  mkdirSync(output);
 
-  fs.readdirSync(input).forEach((file) => {
+  readdirSync(input).forEach((file) => {
     if (exclude.includes(file)) {
       return;
     }
 
-    const srcFile = path.join(input, file);
-    let destFile = path.join(output, file);
+    const srcFile = join(input, file);
+    let destFile = join(output, file);
 
-    if (fs.lstatSync(srcFile).isDirectory()) {
-      fs.mkdirSync(destFile, { recursive: true });
+    if (lstatSync(srcFile).isDirectory()) {
+      mkdirSync(destFile, { recursive: true });
       copyFiles({ input: srcFile, output: destFile, exclude });
     } else {
-      if (path.extname(file) === ".md") {
-        const parsedPath = path.parse(destFile);
+      if (extname(file) === ".md") {
+        const parsedPath = parse(destFile);
         parsedPath.ext = ".mdx";
         parsedPath.base = `${parsedPath.name}${parsedPath.ext}`;
-        destFile = path.format(parsedPath);
+        destFile = format(parsedPath);
 
-        const hash = crypto.createHash("sha256");
+        const hash = createHash("sha256");
         hash.update(file);
         const hashedName = hash.digest("hex");
 
-        const hashedPath = path.parse(destFile);
+        const hashedPath = parse(destFile);
         hashedPath.name = hashedName;
         hashedPath.base = `${hashedName}${hashedPath.ext}`;
-        destFile = path.format(hashedPath);
+        destFile = format(hashedPath);
       }
 
-      fs.copyFileSync(srcFile, destFile);
+      copyFileSync(srcFile, destFile);
     }
   });
 }
