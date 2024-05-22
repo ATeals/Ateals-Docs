@@ -1,6 +1,15 @@
-const withNextra = require('nextra')({
-  theme: 'nextra-theme-docs',
-  themeConfig: './theme.config.tsx',
-})
+import remarkCallout from "remark-callout";
 
-module.exports = withNextra()
+import nextra from "nextra";
+import remarkCalloutConfig from "./config/remarkCalloutConfig.js";
+
+const withNextra = nextra({
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.tsx",
+  mdxOptions: {
+    remarkPlugins: [[remarkCallout, remarkCalloutConfig]],
+    rehypePlugins: [],
+  },
+});
+
+export default withNextra();

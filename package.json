@@ -1,6 +1,7 @@
 {
   "name": "nextra-docs-template",
   "version": "0.0.1",
+  "type": "module",
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
@@ -26,7 +27,9 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remark-callout": "^1.1.1",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
