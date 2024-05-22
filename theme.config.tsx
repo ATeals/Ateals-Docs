@@ -2,6 +2,7 @@ import React from "react";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import siteConfig from "./siteConfig";
 import { useRouter } from "next/router";
+import Main from "./components/main";
 
 const config: DocsThemeConfig = {
   logo: Logo,
@@ -23,17 +24,18 @@ const config: DocsThemeConfig = {
     labels: "",
     content: "",
   },
+  main: Main,
   useNextSeoProps: () => {
     const config = useConfig();
     const { asPath } = useRouter();
 
-    const { title, description, image, tag } = config.frontMatter;
+    const { title, description, cover } = config.frontMatter;
 
     return {
       title: title && asPath !== "/" ? `${title} | Docs` : siteConfig.meta.title,
       description: description || siteConfig.meta.description,
       openGraph: {
-        images: [{ url: image || siteConfig.meta.img }],
+        images: [{ url: cover || siteConfig.meta.img }],
       },
     };
   },
