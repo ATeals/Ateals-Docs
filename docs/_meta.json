@@ -5,6 +5,7 @@
     "title": "개발"
   },
   "java": "",
+  "nest": "Nest.js",
   "Blog": {
     "title": "Blog ↗",
     "type": "page",
