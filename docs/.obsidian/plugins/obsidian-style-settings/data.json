@@ -16,8 +16,9 @@
   "anuppuccin-theme-settings@@anp-header-margin-toggle": true,
   "anuppuccin-theme-settings@@anp-header-divider-color-toggle": true,
   "anuppuccin-theme-settings@@anp-colorful-frame": false,
-  "anuppuccin-theme-settings@@h2-size": 1.75,
+  "anuppuccin-theme-settings@@h2-size": 1.5,
   "anuppuccin-theme-settings@@h3-size": 1.25,
   "anuppuccin-theme-settings@@h3-line-height": 1.2,
-  "anuppuccin-theme-settings@@anp-toggle-preview": true
+  "anuppuccin-theme-settings@@anp-toggle-preview": true,
+  "anuppuccin-theme-settings@@h1-size": 1.75
 }
