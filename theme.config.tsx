@@ -7,9 +7,9 @@ import Main from "@/components/main";
 const config: DocsThemeConfig = {
   logo: Logo,
   project: {
-    link: "https://github.com/shuding/nextra-docs-template",
+    link: siteConfig.URL.PROJECT_REPO,
   },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: siteConfig.URL.PROJECT_REPO,
   footer: {
     text: "Powered by Nextra",
   },

@@ -2,6 +2,7 @@ export default {
   URL: {
     BLOG: "https://ateals.vercel.app",
     DOCS: "https://ateals-docs.vercel.app",
+    PROJECT_REPO: "https://github.com/ATeals/Ateals-Docs",
   },
   LOGO: "https://ateals.vercel.app/images/logo.webp",
   meta: {
