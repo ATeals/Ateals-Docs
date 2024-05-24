@@ -4,9 +4,9 @@ import React, { useEffect, useRef } from "react";
 export const Giscus = () => {
   const ref = useRef<HTMLDivElement>(null);
 
-  const isDarkMode = useConfig().darkMode;
+  const { darkMode } = useConfig();
 
-  const theme = isDarkMode ? "dark" : "light";
+  const theme = darkMode ? "dark" : "light";
 
   const setTheme = (theme: string) => {
     const iframe = document.querySelector<HTMLIFrameElement>("iframe.giscus-frame");
@@ -30,7 +30,7 @@ export const Giscus = () => {
     scriptElem.setAttribute("data-reactions-enabled", "1");
     scriptElem.setAttribute("data-emit-metadata", "0");
     scriptElem.setAttribute("data-input-position", "top");
-    scriptElem.setAttribute("data-theme", theme);
+    scriptElem.setAttribute("data-theme", "light");
     scriptElem.setAttribute("data-lang", "ko");
     // scriptElem.setAttribute("data-loading", "lazy");
     scriptElem.setAttribute("async", "");
@@ -39,13 +39,9 @@ export const Giscus = () => {
 
   useEffect(() => {
     setTheme(theme);
+
+    console.log(theme);
   }, [theme]);
-
-  useEffect(() => {
-    const root = document.querySelector("html");
-
-    if (root?.classList.contains("dark")) setTheme(theme);
-  }, []);
 
   return <section style={{ margin: "5px", padding: "5px" }} ref={ref} />;
 };
