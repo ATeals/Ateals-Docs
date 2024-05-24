@@ -1,8 +1,8 @@
 import React from "react";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
-import siteConfig from "./siteConfig";
+import siteConfig from "@/config/siteConfig";
 import { useRouter } from "next/router";
-import Main from "./components/main";
+import Main from "@/components/main";
 
 const config: DocsThemeConfig = {
   logo: Logo,

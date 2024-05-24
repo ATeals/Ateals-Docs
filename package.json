@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "npm run post && next build",
     "start": "next start",
-    "post": "node ./scripts/copy.js",
+    "post": "node ./.scripts/copy.js",
     "postbuild": "next-sitemap && rm -rf .next/cache"
   },
   "repository": {

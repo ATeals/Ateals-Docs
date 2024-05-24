@@ -1,7 +1,7 @@
 import remarkCallout from "remark-callout";
 
 import nextra from "nextra";
-import remarkCalloutConfig from "./config/remarkCalloutConfig.js";
+import remarkCalloutConfig from "./src/config/remarkCalloutConfig.js";
 
 const withNextra = nextra({
   theme: "nextra-theme-docs",
