@@ -11,10 +11,11 @@
             "id": "32d035b7716dffeb",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "docs/book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
-                "staged": false
+                "file": "book/cleanarchitecture/7~ 11. 설계 원칙.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "book/cleanarchitecture/7~ 11. 설계 원칙.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "book/cleanarchitecture/7~ 11. 설계 원칙.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "book/cleanarchitecture/7~ 11. 설계 원칙.md"
+              }
             }
           },
           {
@@ -157,20 +162,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "0b901be43a9fe629",
+  "active": "32d035b7716dffeb",
   "lastOpenFiles": [
+    "book/cleanarchitecture/3~6. 패러다임.md",
+    "book/cleanarchitecture/1~ 2.설계와 아키텍처란?, 두 가치에 대해.md",
+    "book/cleanarchitecture.mdx",
+    "book/TheEssenceofObjectOrientation.mdx",
     "book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
+    "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
+    "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
     "Tamplate/콜아웃 - 주의.md",
     "Tamplate/콜아웃 - 정보.md",
     "Tamplate/콜아웃 - 위험.md",
     "Tamplate/콜아웃 - 노트.md",
     "book.mdx",
     "Tamplate/토글 목록.md",
-    "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
-    "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
     "book/cleanarchitecture/7~ 11. 설계 원칙.md",
-    "book/TheEssenceofObjectOrientation.mdx",
-    "book/cleanarchitecture.mdx",
     "book/TheEssenceofObjectOrientation",
     "book/The Essence of Object Orientation.mdx",
     "book/clean",
@@ -182,12 +189,10 @@
     "spring/younghan-spring-basic",
     "spring/_meta.json",
     "spring/younghan-spring",
-    "book/cleanarchitecture/3~6. 패러다임.md",
     "Tamplate/MDX 탬플릿.md",
     "nest/무제 파일.md",
     "nest.md",
     "nest.js.md",
-    "book/cleanarchitecture/1~ 2.설계와 아키텍처란?, 두 가치에 대해.md",
     "book/cleanarchitecture/2. 두가지 가치에 대한 이야기.md",
     "java/1. Hello world.md",
     "book/cleanArcitactor/1. 설계와 아키텍처란?.md",
