@@ -13,7 +13,7 @@
             "state": {
               "type": "diff-view",
               "state": {
-                "file": "docs/.obsidian/workspace.json",
+                "file": "docs/book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
                 "staged": false
               }
             }
@@ -157,8 +157,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "32d035b7716dffeb",
+  "active": "0b901be43a9fe629",
   "lastOpenFiles": [
+    "book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
+    "Tamplate/콜아웃 - 주의.md",
+    "Tamplate/콜아웃 - 정보.md",
+    "Tamplate/콜아웃 - 위험.md",
+    "Tamplate/콜아웃 - 노트.md",
+    "book.mdx",
+    "Tamplate/토글 목록.md",
     "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
     "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
     "book/cleanarchitecture/7~ 11. 설계 원칙.md",
@@ -175,7 +182,6 @@
     "spring/younghan-spring-basic",
     "spring/_meta.json",
     "spring/younghan-spring",
-    "spring.mdx",
     "book/cleanarchitecture/3~6. 패러다임.md",
     "Tamplate/MDX 탬플릿.md",
     "nest/무제 파일.md",
@@ -188,12 +194,6 @@
     "book/클린 아키텍처/1. 설계와 아키텍처란?.md",
     "java/2. 변수.md",
     "java/5. 스코프, 형변환.md",
-    "java/4. 조건문, 반복문.md",
-    "java/3. 연산자.md",
-    "2024-05-22.md",
-    "java/1helloworld.md",
-    "java/2변수.md",
-    "java/3연산자.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",

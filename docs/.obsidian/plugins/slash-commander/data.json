@@ -116,6 +116,12 @@
       "triggerMode": "anywhere",
       "chosen": false,
       "selected": false
+    },
+    {
+      "id": "insert-template",
+      "icon": "lucide-copy",
+      "name": "템플릿: 템플릿 삽입",
+      "mode": "any"
     }
   ]
 }
