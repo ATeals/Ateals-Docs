@@ -4,18 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "2c2893e79f0c4755",
+        "id": "50f0e950d508a39a",
         "type": "tabs",
         "children": [
           {
-            "id": "434787c9fe3bb724",
+            "id": "32d035b7716dffeb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "book/cleanarchitecture.mdx",
-                "mode": "source",
-                "source": false
+                "file": "docs/.obsidian/workspace.json",
+                "staged": false
               }
             }
           }
@@ -85,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/cleanarchitecture.mdx",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "book/cleanarchitecture.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +129,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "book/cleanarchitecture.mdx"
-              }
+              "state": {}
             }
           },
           {
@@ -150,8 +145,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -163,8 +157,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "434787c9fe3bb724",
+  "active": "32d035b7716dffeb",
   "lastOpenFiles": [
+    "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
+    "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
+    "book/cleanarchitecture/7~ 11. 설계 원칙.md",
     "book/TheEssenceofObjectOrientation.mdx",
     "book/cleanarchitecture.mdx",
     "book/TheEssenceofObjectOrientation",
@@ -173,14 +170,12 @@
     "book/The Essence of Object Orientation",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와 빈.md",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와  빈.md",
-    "book/cleanarchitecture/7~ 11. 설계 원칙.md",
     "[[TypeSafe한.md",
     "nest/TypeSafe한 ConfigModule.md",
     "spring/younghan-spring-basic",
     "spring/_meta.json",
     "spring/younghan-spring",
     "spring.mdx",
-    "spring",
     "book/cleanarchitecture/3~6. 패러다임.md",
     "Tamplate/MDX 탬플릿.md",
     "nest/무제 파일.md",
@@ -199,8 +194,6 @@
     "java/1helloworld.md",
     "java/2변수.md",
     "java/3연산자.md",
-    "java/3.md",
-    "java/2.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",
