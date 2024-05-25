@@ -4,18 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1b68166d3691d40e",
+        "id": "2c2893e79f0c4755",
         "type": "tabs",
         "children": [
           {
-            "id": "b6310d609eddc670",
+            "id": "434787c9fe3bb724",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "docs/.obsidian/plugins/obsidian-style-settings/data.json",
-                "staged": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -117,7 +114,15 @@
             }
           },
           {
-            "id": "6ed8c04a8eea5582",
+            "id": "4d8036635b38aaef",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "a1573ed62c28227a",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -125,7 +130,7 @@
             }
           },
           {
-            "id": "c249deb841045299",
+            "id": "0b901be43a9fe629",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -133,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -149,8 +154,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b6310d609eddc670",
+  "active": "434787c9fe3bb724",
   "lastOpenFiles": [
+    "spring/younghan-spring-basic/1. 스프링 컨테이너와 빈.md",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와  빈.md",
     "book/cleanarchitecture/7~ 11. 설계 원칙.md",
     "[[TypeSafe한.md",
@@ -186,7 +192,6 @@
     "java/3.md",
     "java/2.md",
     "java/1Hello world.md",
-    "java/1.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",
