@@ -25,6 +25,7 @@ interface DocsManagerOptions {
   input: string;
   output: string;
   exclude?: string[];
+  fileEvents?: FileEvent[];
 }
 
 interface FileEvent {
@@ -36,76 +37,83 @@ class DocsManager {
   input: string;
   output: string;
   exclude: string[];
+  fileEvents: FileEvent[];
 
   constructor(options: DocsManagerOptions) {
-    const { input, output, exclude = [] } = options;
+    const { input, output, exclude = [], fileEvents = [] } = options;
     this.input = input;
     this.output = output;
     this.exclude = exclude;
+    this.fileEvents = fileEvents;
   }
 
-  cleanOutput(): DocsManager {
+  cleanOutput() {
     if (existsSync(this.output)) {
       rmSync(this.output, { recursive: true, force: true });
     }
     mkdirSync(this.output);
+    return this;
+  }
+
+  isFolder(file: string) {
+    return lstatSync(file).isDirectory();
+  }
+
+  setFileEvent(fileEvents: FileEvent[]) {
+    this.fileEvents = fileEvents;
 
     return this;
   }
 
-  isFolder(file: string): boolean {
-    return lstatSync(join(this.input, file)).isDirectory();
+  makeDocs({
+    fileEvents,
+    options,
+  }: { fileEvents?: FileEvent[]; options?: DocsManagerOptions } = {}) {
+    if (fileEvents) this.setFileEvent(fileEvents);
+
+    const { input, output } = options || this;
+
+    this.copyDirectory(input, output);
+
+    return this;
   }
 
-  copyFiles({
-    fileEvents,
-    options: { input, output, exclude = this.exclude } = {
-      input: this.input,
-      output: this.output,
-      exclude: this.exclude,
-    },
-  }: {
-    fileEvents?: FileEvent[];
-    options?: DocsManagerOptions;
-  }): DocsManager {
+  private copyDirectory(input: string, output: string) {
     readdirSync(input).forEach((file: string) => {
-      if (exclude.includes(file)) {
-        return;
-      }
+      if (this.exclude.includes(file)) return;
 
       const srcFile: string = join(input, file);
+      const destFile: string = join(output, file);
 
-      let destFile: string = join(output, file);
-
-      if (this.isFolder(file)) {
-        mkdirSync(destFile, { recursive: true });
-        new DocsManager({ input: srcFile, output: destFile, exclude: exclude }).copyFiles({
-          fileEvents,
-          options: { input: srcFile, output: destFile, exclude },
-        });
+      if (this.isFolder(srcFile)) {
+        this.copyFolder(srcFile, destFile);
       } else {
-        if (fileEvents) {
-          for (const { fileExt, handler } of fileEvents) {
-            if (extname(file) === `.${fileExt}`) {
-              destFile = handler(destFile, this);
-            }
-          }
-        }
-        copyFileSync(srcFile, destFile);
+        this.copyFile(srcFile, destFile);
       }
     });
+  }
 
-    return this;
+  private copyFolder(src: string, dest: string) {
+    mkdirSync(dest, { recursive: true });
+    this.copyDirectory(src, dest);
+  }
+
+  private copyFile(src: string, dest: string) {
+    if (this.fileEvents) {
+      for (const { fileExt, handler } of this.fileEvents) {
+        if (extname(src) === `.${fileExt}`) {
+          dest = handler(dest, this);
+        }
+      }
+    }
+    copyFileSync(src, dest);
   }
 }
 
 const manager: DocsManager = new DocsManager({
   input: "./docs",
   output: "./pages",
-  exclude: [".obsidian", "Tamplate"],
-});
-
-manager.cleanOutput().copyFiles({
+  exclude: [".obsidian", "Template"],
   fileEvents: [
     {
       fileExt: "md",
@@ -116,3 +124,5 @@ manager.cleanOutput().copyFiles({
     },
   ],
 });
+
+manager.cleanOutput().makeDocs();
