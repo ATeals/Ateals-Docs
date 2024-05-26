@@ -5,9 +5,9 @@
   "description": "Nextra docs template",
   "scripts": {
     "dev": "next dev",
-    "build": "npm run post && next build",
+    "build": "next build",
     "start": "next start",
-    "post": "node ./.scripts/copy.js",
+    "prebuild": "tsx ./.scripts/index.ts",
     "postbuild": "next-sitemap && rm -rf .next/cache"
   },
   "repository": {
@@ -34,6 +34,7 @@
   "devDependencies": {
     "@types/node": "18.11.10",
     "@types/react": "^18.3.2",
+    "tsx": "^4.11.0",
     "typescript": "^4.9.3"
   }
 }
