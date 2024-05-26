@@ -24,7 +24,7 @@ class Utils {
 interface DocsManagerOptions {
   input: string;
   output: string;
-  exclude?: string[];
+  excludes?: string[];
   fileEvents?: FileEvent[];
 }
 
@@ -36,14 +36,14 @@ interface FileEvent {
 class DocsManager {
   input: string;
   output: string;
-  exclude: string[];
+  excludes: string[];
   fileEvents: FileEvent[];
 
   constructor(options: DocsManagerOptions) {
-    const { input, output, exclude = [], fileEvents = [] } = options;
+    const { input, output, excludes = [], fileEvents = [] } = options;
     this.input = input;
     this.output = output;
-    this.exclude = exclude;
+    this.excludes = excludes;
     this.fileEvents = fileEvents;
   }
 
@@ -80,7 +80,7 @@ class DocsManager {
 
   private copyDirectory(input: string, output: string) {
     readdirSync(input).forEach((file: string) => {
-      if (this.exclude.includes(file)) return;
+      if (this.excludes.includes(file)) return;
 
       const srcFile: string = join(input, file);
       const destFile: string = join(output, file);
@@ -113,7 +113,7 @@ class DocsManager {
 const manager: DocsManager = new DocsManager({
   input: "./docs",
   output: "./pages",
-  exclude: [".obsidian", "Template"],
+  excludes: [".obsidian", "_template", "hello"],
   fileEvents: [
     {
       fileExt: "md",
