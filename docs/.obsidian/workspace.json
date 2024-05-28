@@ -13,7 +13,7 @@
             "state": {
               "type": "diff-view",
               "state": {
-                "file": "docs/_meta.json",
+                "file": "docs/.obsidian/workspace.json",
                 "staged": false
               }
             }
@@ -159,7 +159,8 @@
   },
   "active": "b7161863da8d250a",
   "lastOpenFiles": [
-    "nest-documents/Controllers.md.md",
+    "nest-documents/2. Providers.md",
+    "nest-documents/1. Controllers.md",
     "nest/TypeSafe한 ConfigModule.md",
     "book.mdx",
     "nest-documents",
@@ -194,7 +195,6 @@
     "book/The Essence of Object Orientation",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와 빈.md",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와  빈.md",
-    "[[TypeSafe한.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",
