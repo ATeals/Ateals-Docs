@@ -4,18 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "50f0e950d508a39a",
+        "id": "4fac26ec54a24944",
         "type": "tabs",
         "children": [
           {
-            "id": "32d035b7716dffeb",
+            "id": "b7161863da8d250a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "book/TheEssenceofObjectOrientation/4. 역할, 책임, 협력.md",
-                "mode": "source",
-                "source": false
+                "file": "docs/_meta.json",
+                "staged": false
               }
             }
           }
@@ -85,7 +84,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "book/TheEssenceofObjectOrientation/4. 역할, 책임, 협력.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "book/TheEssenceofObjectOrientation/4. 역할, 책임, 협력.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +129,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "book/TheEssenceofObjectOrientation/4. 역할, 책임, 협력.md"
-              }
+              "state": {}
             }
           },
           {
@@ -162,10 +157,18 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "32d035b7716dffeb",
+  "active": "b7161863da8d250a",
   "lastOpenFiles": [
-    "book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
+    "nest-documents/Controllers.md.md",
+    "nest/TypeSafe한 ConfigModule.md",
+    "book.mdx",
+    "nest-documents",
+    "nest/documents/Controllers.md.md",
+    "nest/nest-documents/Controllers.md.md",
+    "nest/nest-documents",
+    "nest/documents/Controllers.md",
     "book/TheEssenceofObjectOrientation/4. 역할, 책임, 협력.md",
+    "book/TheEssenceofObjectOrientation/3. 타입과 추상화.md",
     "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
     "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
     "book/cleanarchitecture/7~ 11. 설계 원칙.md",
@@ -184,7 +187,6 @@
     "Tamplate/콜아웃 - 정보.md",
     "Tamplate/콜아웃 - 위험.md",
     "Tamplate/콜아웃 - 노트.md",
-    "book.mdx",
     "Tamplate/토글 목록.md",
     "book/TheEssenceofObjectOrientation",
     "book/The Essence of Object Orientation.mdx",
@@ -193,13 +195,6 @@
     "spring/younghan-spring-basic/1. 스프링 컨테이너와 빈.md",
     "spring/younghan-spring-basic/1. 스프링 컨테이너와  빈.md",
     "[[TypeSafe한.md",
-    "nest/TypeSafe한 ConfigModule.md",
-    "spring/younghan-spring-basic",
-    "spring/_meta.json",
-    "Tamplate/MDX 탬플릿.md",
-    "nest/무제 파일.md",
-    "nest.md",
-    "nest.js.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",
