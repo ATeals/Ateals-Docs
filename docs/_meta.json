@@ -2,10 +2,8 @@
   "index": "Main",
   "--- 개발": {
     "type": "separator",
-    "title": "개발"
+    "title": "개발 아티클"
   },
-  "java": "",
-  "spring": "",
   "nest": "Nest.js",
   "Blog": {
     "title": "Blog ↗",
@@ -17,5 +15,7 @@
     "type": "separator",
     "title": "아카이브"
   },
-  "book": "독서"
+  "book": "독서",
+  "java": "",
+  "spring": ""
 }

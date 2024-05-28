@@ -26,7 +26,8 @@
     "src/scripts/copy.js",
     "next-sitemap.config.js",
     "theme.config.tsx",
-    "docs/**/*.{ts,tsx}"
+    "docs/**/*.{ts,tsx}",
+    "./.scripts/**/*.{ts,tsx}"
   ],
   "exclude": ["node_modules"]
 }
