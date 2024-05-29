@@ -4,17 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "4fac26ec54a24944",
+        "id": "8af3ef29b8753fac",
         "type": "tabs",
         "children": [
           {
-            "id": "b7161863da8d250a",
+            "id": "2afffef8838ae793",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "docs/.obsidian/workspace.json",
-                "staged": false
+                "file": "nest-documents/5. Exception filters.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "nest-documents/5. Exception filters.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "nest-documents/5. Exception filters.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "nest-documents/5. Exception filters.md"
+              }
             }
           },
           {
@@ -157,8 +162,18 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b7161863da8d250a",
+  "active": "2afffef8838ae793",
   "lastOpenFiles": [
+    "_template/MDX 탬플릿.md",
+    "_template/토글 목록.md",
+    "_template/콜아웃 - 주의.md",
+    "_template/콜아웃 - 정보.md",
+    "_template/콜아웃 - 위험.md",
+    "_template/콜아웃 - 노트.md",
+    "nest-documents/5. Exception filters.md",
+    "nest-documents/4. Middleware.md",
+    "nest-documents/3. Modules.md",
+    "().md",
     "nest-documents/2. Providers.md",
     "nest-documents/1. Controllers.md",
     "nest/TypeSafe한 ConfigModule.md",
@@ -173,12 +188,6 @@
     "book/TheEssenceofObjectOrientation/2. 이상한 나라의 객체.md",
     "book/TheEssenceofObjectOrientation/1. 협력하는 객체들의 공동체.md",
     "book/cleanarchitecture/7~ 11. 설계 원칙.md",
-    "_template/토글 목록.md",
-    "_template/콜아웃 - 주의.md",
-    "_template/콜아웃 - 정보.md",
-    "_template/콜아웃 - 위험.md",
-    "_template/콜아웃 - 노트.md",
-    "_template/MDX 탬플릿.md",
     "_template",
     "book/cleanarchitecture/3~6. 패러다임.md",
     "book/cleanarchitecture/1~ 2.설계와 아키텍처란?, 두 가치에 대해.md",
@@ -186,15 +195,10 @@
     "book/TheEssenceofObjectOrientation.mdx",
     "Tamplate/콜아웃 - 주의.md",
     "Tamplate/콜아웃 - 정보.md",
-    "Tamplate/콜아웃 - 위험.md",
-    "Tamplate/콜아웃 - 노트.md",
-    "Tamplate/토글 목록.md",
     "book/TheEssenceofObjectOrientation",
     "book/The Essence of Object Orientation.mdx",
     "book/clean",
     "book/The Essence of Object Orientation",
-    "spring/younghan-spring-basic/1. 스프링 컨테이너와 빈.md",
-    "spring/younghan-spring-basic/1. 스프링 컨테이너와  빈.md",
     "java/이미지/3. 연산자/Pasted image 20240520003729.png",
     "java/이미지/3. 연산자/Pasted image 20240520001653.png",
     "java/이미지/1.Hello world/Pasted image 20240519213334.png",

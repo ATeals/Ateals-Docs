@@ -1,12 +1,4 @@
 {
-  "app:delete-file": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Backspace"
-    }
-  ],
   "switcher:open": [],
   "editor:open-link-in-new-leaf": [],
   "markdown:toggle-preview": [],
@@ -38,6 +30,14 @@
     {
       "modifiers": [],
       "key": "F12"
+    }
+  ],
+  "editor:delete-paragraph": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Backspace"
     }
   ]
 }
